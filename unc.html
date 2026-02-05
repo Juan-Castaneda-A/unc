@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNC - Central de Información</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'shout': ['"Anton"', 'sans-serif'],
+                        'heavy': ['"Archivo Black"', 'sans-serif'],
+                        'tech': ['"JetBrains Mono"', 'monospace'],
+                        'body': ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        'void': '#09090b',
+                        'armor': '#27272a',
+                        'blood': '#dc2626',
+                        'steel': '#a1a1aa',
+                        'paper-dark': '#18181b',
+                    },
+                    backgroundImage: {
+                        'noise': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-void text-white font-body min-h-screen p-0 bg-noise selection:bg-blood selection:text-white">
+
+    <div class="fixed top-0 w-full z-50 bg-void border-b border-armor text-[10px] font-tech text-steel py-1 px-4 flex justify-between items-center">
+        <div class="flex gap-4">
+            <span class="text-blood font-bold tracking-widest">[ LIVE ]</span>
+            <span>FECHA: 2026.02.05</span>
+        </div>
+        <div class="hidden md:block">
+            <span>ESTADO: OPERATIVO // USUARIOS: 203</span>
+        </div>
+    </div>
+
+    <nav class="mt-8 bg-paper-dark border-b-4 border-armor px-6 py-6 sticky top-0 z-40 shadow-2xl">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3 group cursor-pointer">
+                <div class="w-10 h-10 bg-blood flex items-center justify-center font-heavy text-void text-xl group-hover:bg-white transition-colors">U</div>
+                <div>
+                    <h1 class="font-shout text-3xl leading-none tracking-tight">UNC<span class="text-blood">.ORG</span></h1>
+                    <span class="font-tech text-[10px] text-steel tracking-[0.3em] block">UNIÓN NACIONALISTA COLOMBIANA</span>
+                </div>
+            </div>
+
+            <div class="flex gap-1 md:gap-8 font-heavy text-sm md:text-lg uppercase tracking-tight">
+                <a href="#" class="text-white hover:text-blood py-2 border-b-2 border-transparent hover:border-blood transition-all">Noticias</a>
+                <a href="#" class="text-gray-500 hover:text-blood py-2 border-b-2 border-transparent hover:border-blood transition-all">Doctrina</a>
+                <a href="#" class="text-gray-500 hover:text-blood py-2 border-b-2 border-transparent hover:border-blood transition-all">Intel</a>
+                <a href="#" class="bg-armor px-4 py-2 border border-steel hover:bg-blood hover:text-void hover:border-void transition-all">Afiliarse</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto border-x border-armor bg-void min-h-screen">
+        
+        <section class="grid grid-cols-1 lg:grid-cols-12 border-b border-armor">
+            <div class="lg:col-span-8 p-8 md:p-12 relative overflow-hidden group">
+                <span class="bg-blood text-void font-bold font-tech text-xs px-2 py-1 mb-4 inline-block">EDITORIAL CENTRAL</span>
+                
+                <h2 class="font-shout text-5xl md:text-7xl uppercase leading-[0.9] mb-6 text-white group-hover:text-gray-200 transition-colors cursor-pointer">
+                    Lorem Ipsum Dolor Sit <br> Amet Consectetur.
+                </h2>
+                
+                <p class="font-body text-gray-400 text-lg leading-relaxed max-w-2xl mb-8 border-l-2 border-armor pl-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+
+                <button class="font-tech text-xs border border-steel text-steel px-6 py-3 uppercase hover:bg-white hover:text-void hover:border-white transition-all">
+                    Leer Artículo Completo ->
+                </button>
+            </div>
+
+            <div class="lg:col-span-4 bg-paper-dark border-l border-armor p-0 flex flex-col">
+                <div class="bg-armor p-2 font-tech text-xs text-center text-gray-300 uppercase tracking-widest">
+                    Transmisión en tiempo real
+                </div>
+                <div class="flex-1 overflow-y-auto p-6 space-y-6">
+                    <div class="border-b border-gray-800 pb-4">
+                        <span class="text-blood font-tech text-[10px]">10:42 AM</span>
+                        <h4 class="font-bold font-body text-sm mt-1 hover:text-blood cursor-pointer">Suspendisse ultrices gravida dictum fusce ut placerat.</h4>
+                    </div>
+                    <div class="border-b border-gray-800 pb-4">
+                        <span class="text-blood font-tech text-[10px]">09:15 AM</span>
+                        <h4 class="font-bold font-body text-sm mt-1 hover:text-blood cursor-pointer">Maecenas accumsan lacus vel facilisis.</h4>
+                    </div>
+                     <div class="border-b border-gray-800 pb-4">
+                        <span class="text-blood font-tech text-[10px]">AYER</span>
+                        <h4 class="font-bold font-body text-sm mt-1 hover:text-blood cursor-pointer">Risus commod viverra maecenas accumsan lacus vel facilisis.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="p-8 md:p-12 border-b-4 border-armor">
+            <div class="flex justify-between items-end mb-10 border-b border-gray-800 pb-4">
+                <h3 class="font-heavy text-3xl md:text-4xl text-white uppercase">Archivo de Inteligencia</h3>
+                <a href="#" class="hidden md:block font-tech text-xs text-steel underline hover:text-white">VER TODO EL ARCHIVO</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="group cursor-pointer">
+                    <div class="h-48 bg-armor w-full mb-4 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-neutral-800 flex items-center justify-center text-gray-700 font-heavy text-4xl opacity-20">IMG</div>
+                        <div class="absolute top-2 left-2 bg-black text-white font-tech text-[10px] px-2 py-1">ECONOMÍA</div>
+                    </div>
+                    <h4 class="font-bold text-xl leading-tight mb-2 group-hover:text-blood transition-colors">Magna fringilla urna porttitor rhoncus dolor.</h4>
+                    <p class="text-sm text-gray-500 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+
+                <article class="group cursor-pointer">
+                    <div class="h-48 bg-armor w-full mb-4 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-neutral-800 flex items-center justify-center text-gray-700 font-heavy text-4xl opacity-20">IMG</div>
+                        <div class="absolute top-2 left-2 bg-black text-white font-tech text-[10px] px-2 py-1">SEGURIDAD</div>
+                    </div>
+                    <h4 class="font-bold text-xl leading-tight mb-2 group-hover:text-blood transition-colors">Tincidunt lobortis feugiat vivamus at augue.</h4>
+                    <p class="text-sm text-gray-500 line-clamp-3">Arcu non sodales neque sodales ut etiam sit amet nisl. Eget gravida cum sociis natoque penatibus et magnis.</p>
+                </article>
+
+                <article class="group cursor-pointer">
+                    <div class="h-48 bg-armor w-full mb-4 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-neutral-800 flex items-center justify-center text-gray-700 font-heavy text-4xl opacity-20">IMG</div>
+                        <div class="absolute top-2 left-2 bg-black text-white font-tech text-[10px] px-2 py-1">OPINIÓN</div>
+                    </div>
+                    <h4 class="font-bold text-xl leading-tight mb-2 group-hover:text-blood transition-colors">Viverra nam libero justo laoreet sit amet cursus.</h4>
+                    <p class="text-sm text-gray-500 line-clamp-3">Diam vel quam elementum pulvinar etiam non quam lacus suspendisse. Urna porttitor rhoncus dolor purus non enim.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="bg-paper-dark p-8 md:p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 font-shout text-9xl text-white opacity-[0.03] select-none pointer-events-none">SUPPLY</div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="font-tech text-blood text-xs border border-blood px-3 py-1 uppercase tracking-widest">Apoyo Financiero Directo</span>
+                    <h3 class="font-heavy text-4xl md:text-5xl text-white mt-4 uppercase">Logística & Suministros</h3>
+                    <p class="text-gray-400 mt-4 max-w-lg mx-auto">Adquirir material oficial es la forma más directa de financiar nuestras operaciones. Todos los fondos son auditados.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="border border-armor bg-void p-4 hover:border-white transition-colors group relative">
+                        <div class="h-40 bg-neutral-900 mb-4 flex items-center justify-center grayscale group-hover:grayscale-0">
+                            <span class="text-gray-700 font-tech text-xs">[ FOTO PRODUCTO ]</span>
+                        </div>
+                        <h5 class="font-bold text-lg text-white">Camiseta Oficial V.1</h5>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="font-tech text-steel text-sm">$45.000 COP</span>
+                            <button class="bg-white text-black text-xs font-bold px-3 py-1 uppercase hover:bg-blood hover:text-white transition-colors">Añadir</button>
+                        </div>
+                    </div>
+
+                    <div class="border border-armor bg-void p-4 hover:border-white transition-colors group relative">
+                        <div class="absolute top-2 right-2 bg-blood text-white text-[10px] font-bold px-2 py-1">BESTSELLER</div>
+                        <div class="h-40 bg-neutral-900 mb-4 flex items-center justify-center grayscale group-hover:grayscale-0">
+                            <span class="text-gray-700 font-tech text-xs">[ FOTO PRODUCTO ]</span>
+                        </div>
+                        <h5 class="font-bold text-lg text-white">Manual de Doctrina</h5>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="font-tech text-steel text-sm">$20.000 COP</span>
+                            <button class="bg-white text-black text-xs font-bold px-3 py-1 uppercase hover:bg-blood hover:text-white transition-colors">Añadir</button>
+                        </div>
+                    </div>
+
+                    <div class="border border-armor bg-void p-4 hover:border-white transition-colors group relative">
+                         <div class="h-40 bg-neutral-900 mb-4 flex items-center justify-center grayscale group-hover:grayscale-0">
+                            <span class="text-gray-700 font-tech text-xs">[ FOTO PRODUCTO ]</span>
+                        </div>
+                        <h5 class="font-bold text-lg text-white">Bono de Donación</h5>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="font-tech text-steel text-sm">VOLUNTARIO</span>
+                            <button class="bg-white text-black text-xs font-bold px-3 py-1 uppercase hover:bg-blood hover:text-white transition-colors">Donar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="#" class="font-tech text-xs text-steel border-b border-steel pb-1 hover:text-white hover:border-white transition-colors">VER CATÁLOGO DE LOGÍSTICA COMPLETO >></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-black text-gray-500 py-10 border-t border-armor text-center font-tech text-xs">
+        <p>COPYRIGHT © 2026 UNIÓN NACIONALISTA COLOMBIANA. TODOS LOS DERECHOS RESERVADOS.</p>
+        <p class="mt-2">PROTOCOLOS DE SEGURIDAD ACTIVOS.</p>
+    </footer>
+
+</body>
+</html>
